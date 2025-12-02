@@ -286,6 +286,62 @@
                     );
             }
         }
+        /* Solutions section */
+.solutions-section {
+    margin-top: 3rem;
+    text-align: center;
+    animation: fadeIn 0.8s ease-out 0.2s backwards;
+}
+
+.solutions-heading {
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+}
+
+.solutions-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.solution-btn {
+    display: block;
+    padding: 1rem 1.25rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    text-decoration: none;
+    text-align: left;
+    transition: all 0.2s ease;
+}
+
+.solution-btn:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 2px 12px rgba(26, 93, 74, 0.08);
+    transform: translateY(-1px);
+}
+
+.solution-title {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+}
+
+.solution-desc {
+    display: block;
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+}
     </style>
 </head>
 <body>
@@ -321,6 +377,19 @@
             </p>
         </article>
 
+       <section class="solutions-section">
+    <h3 class="solutions-heading">Other Hyfe Highlights</h3>
+    <div class="solutions-buttons">
+        <a href="https://hyfe.com" class="solution-btn" target="_blank" rel="noopener">
+            <span class="solution-title">Hyfe Inc.</span>
+            <span class="solution-desc">Hyfe's Corporate Hub: Explore Science, Technology and Insights</span>
+        </a>
+        <a href="https://coughmonitor.com" class="solution-btn" target="_blank" rel="noopener">
+            <span class="solution-title">Hyfe CoughMonitor Suite</span>
+            <span class="solution-desc">Cough Monitoring for Life Sciences</span>
+        </a>
+    </div>
+</section>
         <footer class="footer">
             <p>&copy; 2025 CoughDiary. All rights reserved.</p>
         </footer>
